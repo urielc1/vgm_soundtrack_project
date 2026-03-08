@@ -1,0 +1,33 @@
+---
+title: "Data"
+---
+
+This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. 
+
+```{r, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+
+df <- read.csv("video_game_ost_cleaned_with_seconds.csv")
+
+```
+
+# Dataset 
+
+This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. 
+
+Each row represents one track and includes 
+
+- game 
+- year 
+- era 
+- track title 
+- duration in seconds
+
+
+# Games Included 
+
+```{r}
+unique(df$game)
+```
+

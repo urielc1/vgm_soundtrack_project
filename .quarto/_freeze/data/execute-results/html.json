@@ -1,0 +1,15 @@
+{
+  "hash": "7a427bf06971aeac864ad715dfc5341d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Data\"\n---\n\nThis dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. \n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(dplyr)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n\nAttaching package: 'dplyr'\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n```\n\n\n:::\n\n```{.r .cell-code}\ndf <- read.csv(\"video_game_ost_cleaned_with_seconds.csv\")\n```\n:::\n\n\n# Dataset \n\nThis dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. \n\nEach row represents one track and includes \n\n- game \n- year \n- era \n- track title \n- duration in seconds\n\n\n# Games Included \n\n\n::: {.cell}\n\n```{.r .cell-code}\nunique(df$game)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n [1] \"Halo\"                                \n [2] \"Metal Gear Solid\"                    \n [3] \"Super Mario 64\"                      \n [4] \"The Legend of Zelda: Ocarina of Time\"\n [5] \"Mega Man\"                            \n [6] \"Sonic The Hedgehog\"                  \n [7] \"Super Mario Bros\"                    \n [8] \"The Legend of Zelda\"                 \n [9] \"Minecraft\"                           \n[10] \"Skyrim\"                              \n[11] \"The Last of Us\"                      \n```\n\n\n:::\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

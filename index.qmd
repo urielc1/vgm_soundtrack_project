@@ -1,0 +1,22 @@
+---
+title: "Home"
+---
+
+# From 8-Bit Loops to Cinematic Scores
+
+## A Digital Humanities Study of Video Game Soundtrack Evolution
+
+Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.
+
+This project investigates how the **structure and scale of video game soundtracks** changed across technological eras.
+
+## Research Question
+
+How has the scale of video game soundtracks changed across technological eras?
+
+## What this site shows
+
+- how many tracks different games contain
+- how soundtrack runtime changes over time
+- how track-length distributions vary across eras
+- what these patterns suggest about technological change

@@ -1,0 +1,28 @@
+
+### `conclusion.qmd`
+```markdown
+---
+title: "Conclusion"
+---
+
+# Conclusion
+
+This project shows that video game soundtracks expanded substantially over time.
+
+## Main Findings
+
+- newer games tend to include more tracks
+- soundtrack runtime increased across technological eras
+- early games relied more heavily on short looping musical structures
+
+## Interpretation
+
+These patterns suggest that technological change shaped not just audio quality, but also the structure and scale of game music itself.
+
+## Future Work
+
+Future research could examine:
+
+- more games per era
+- local audio feature extraction
+- emotional or stylistic differences across franchises
