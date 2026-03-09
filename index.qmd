@@ -2,8 +2,6 @@
 title: "Home"
 ---
 
-# From 8-Bit Loops to Cinematic Scores
-
 ## Introduction
 
 Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.

@@ -1,0 +1,79 @@
+---
+title: "Listening"
+---
+
+# Listening Across Eras
+
+Because this project focuses on video game music, this page provides a brief listening companion to the timeline and data analysis. These examples illustrate how soundtrack style changed across technological eras.
+
+## Early / 8-Bit Era
+
+Early game music relied on short looping melodies and a limited number of sound channels.
+
+### Super Mario Bros. (1985)
+
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+title="Super Mario Bros"
+frameborder="0"
+allowfullscreen></iframe>
+
+This example highlights the short-loop structure and simple electronic timbres associated with early hardware limitations.
+
+---
+
+## 16-Bit / Expanded Console Era
+
+Improved sound chips and sampling allowed for richer textures and more stylistic variety.
+
+### Sonic the Hedgehog (1991)
+
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+title="Sonic the Hedgehog"
+frameborder="0"
+allowfullscreen></iframe>
+
+This track reflects the faster rhythms and expanded musical palette of the 16-bit era.
+
+---
+
+## CD / Early 3D Era
+
+As storage expanded, soundtracks became clearer, longer, and more cinematic.
+
+### Ocarina of Time (1998)
+
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+title="Ocarina of Time"
+frameborder="0"
+allowfullscreen></iframe>
+
+This example shows how music increasingly supported atmosphere, world-building, and emotional tone.
+
+---
+
+## Modern Era
+
+Modern games include both large orchestral scores and more ambient, minimalist approaches.
+
+### Halo: Combat Evolved (2001)
+
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+title="Halo"
+frameborder="0"
+allowfullscreen></iframe>
+
+Halo demonstrates the rise of cinematic orchestral scoring in modern games.
+
+### Minecraft (2011)
+
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+title="Minecraft"
+frameborder="0"
+allowfullscreen></iframe>
+
+Minecraft offers a different modern approach: minimalist ambient composition used to create reflection and atmosphere.

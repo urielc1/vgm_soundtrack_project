@@ -1,66 +1,45 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "listening.html",
+    "href": "listening.html",
+    "title": "Listening",
     "section": "",
-    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras.\n\n\n\nHow has the scale of video game soundtracks changed across technological eras?\n\n\n\n\nhow many tracks different games contain\nhow soundtrack runtime changes over time\nhow track-length distributions vary across eras\nwhat these patterns suggest about technological change"
+    "text": "Because this project focuses on video game music, this page provides a brief listening companion to the timeline and data analysis. These examples illustrate how soundtrack style changed across technological eras.\n\n\nEarly game music relied on short looping melodies and a limited number of sound channels.\n\n\n\n\nThis example highlights the short-loop structure and simple electronic timbres associated with early hardware limitations.\n\n\n\n\n\nImproved sound chips and sampling allowed for richer textures and more stylistic variety.\n\n\n\n\nThis track reflects the faster rhythms and expanded musical palette of the 16-bit era.\n\n\n\n\n\nAs storage expanded, soundtracks became clearer, longer, and more cinematic.\n\n\n\n\nThis example shows how music increasingly supported atmosphere, world-building, and emotional tone.\n\n\n\n\n\nModern games include both large orchestral scores and more ambient, minimalist approaches.\n\n\n\n\nHalo demonstrates the rise of cinematic orchestral scoring in modern games.\n\n\n\n\n\nMinecraft offers a different modern approach: minimalist ambient composition used to create reflection and atmosphere."
   },
   {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Home",
+    "objectID": "listening.html#early-8-bit-era",
+    "href": "listening.html#early-8-bit-era",
+    "title": "Listening",
     "section": "",
-    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
+    "text": "Early game music relied on short looping melodies and a limited number of sound channels.\n\n\n\n\nThis example highlights the short-loop structure and simple electronic timbres associated with early hardware limitations."
   },
   {
-    "objectID": "index.html#research-question",
-    "href": "index.html#research-question",
-    "title": "Home",
+    "objectID": "listening.html#bit-expanded-console-era",
+    "href": "listening.html#bit-expanded-console-era",
+    "title": "Listening",
     "section": "",
-    "text": "How has the scale of video game soundtracks changed across technological eras?"
+    "text": "Improved sound chips and sampling allowed for richer textures and more stylistic variety.\n\n\n\n\nThis track reflects the faster rhythms and expanded musical palette of the 16-bit era."
   },
   {
-    "objectID": "index.html#what-this-site-shows",
-    "href": "index.html#what-this-site-shows",
-    "title": "Home",
+    "objectID": "listening.html#cd-early-3d-era",
+    "href": "listening.html#cd-early-3d-era",
+    "title": "Listening",
     "section": "",
-    "text": "how many tracks different games contain\nhow soundtrack runtime changes over time\nhow track-length distributions vary across eras\nwhat these patterns suggest about technological change"
+    "text": "As storage expanded, soundtracks became clearer, longer, and more cinematic.\n\n\n\n\nThis example shows how music increasingly supported atmosphere, world-building, and emotional tone."
   },
   {
-    "objectID": "conclusion.html",
-    "href": "conclusion.html",
-    "title": "Conclusion",
+    "objectID": "listening.html#modern-era",
+    "href": "listening.html#modern-era",
+    "title": "Listening",
     "section": "",
-    "text": "This project shows that video game soundtracks expanded dramatically over time, reflecting advances in storage capacity, audio hardware, and the growing cinematic ambitions of game design."
+    "text": "Modern games include both large orchestral scores and more ambient, minimalist approaches.\n\n\n\n\nHalo demonstrates the rise of cinematic orchestral scoring in modern games.\n\n\n\n\n\nMinecraft offers a different modern approach: minimalist ambient composition used to create reflection and atmosphere."
   },
   {
-    "objectID": "conclusion.html#one-sentence-result",
-    "href": "conclusion.html#one-sentence-result",
-    "title": "Conclusion",
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
     "section": "",
-    "text": "This project shows that video game soundtracks expanded dramatically over time, reflecting advances in storage capacity, audio hardware, and the growing cinematic ambitions of game design."
-  },
-  {
-    "objectID": "conclusion.html#main-findings",
-    "href": "conclusion.html#main-findings",
-    "title": "Conclusion",
-    "section": "Main Findings",
-    "text": "Main Findings\nThe analysis highlights several trends across technological eras:\n\nnewer games tend to include more tracks per soundtrack\ntotal soundtrack run time increased significantly over time\nearly games relied more heavily on short looping musical structures due to hardware limitations\n\nTogether, these patterns illustrate how technological constraints shaped the musical structure of early games, while modern systems allow far larger and more varied soundtracks."
-  },
-  {
-    "objectID": "conclusion.html#interpretation",
-    "href": "conclusion.html#interpretation",
-    "title": "Conclusion",
-    "section": "Interpretation",
-    "text": "Interpretation\nThese results suggest that the evolution of video game music is closely tied to technological development. Early systems such as arcade machines and 8-bit consoles could only generate a small number of sound channels and had extremely limited storage capacity. As a result, composers created short, looping melodies designed to maximize musical impact within severe technical constraints.\nAs hardware improved through the 16-bit era, CD-based systems, and modern consoles, composers gained access to greater storage space, higher audio fidelity, and the ability to incorporate orchestral recordings and longer compositions. Modern games now frequently feature cinematic soundtracks that rival film scores in scale and complexity."
-  },
-  {
-    "objectID": "conclusion.html#future-work",
-    "href": "conclusion.html#future-work",
-    "title": "Conclusion",
-    "section": "Future Work",
-    "text": "Future Work\nFuture research could expand this analysis in several directions:\n\nincorporating a larger data set of games across more genres and eras\nextracting audio features such as tempo, instrumentation, or harmonic complexity\ncomparing soundtrack structure across different game franchises or developers\n\nSuch work would help further illuminate how technological change, artistic practice, and player expectations interact in shaping video game music."
+    "text": "This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ndf &lt;- read.csv(\"video_game_ost_cleaned_with_seconds.csv\")\n\n\nDataset\nThis dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.\nEach row represents one track and includes\n\ngame\nyear\nera\ntrack title\nduration in seconds\n\n\n\nGames Included\n\nunique(df$game)\n\n [1] \"Halo\"                                \n [2] \"Metal Gear Solid\"                    \n [3] \"Super Mario 64\"                      \n [4] \"The Legend of Zelda: Ocarina of Time\"\n [5] \"Mega Man\"                            \n [6] \"Sonic The Hedgehog\"                  \n [7] \"Super Mario Bros\"                    \n [8] \"The Legend of Zelda\"                 \n [9] \"Minecraft\"                           \n[10] \"Skyrim\"                              \n[11] \"The Last of Us\""
   },
   {
     "objectID": "analysis.html",
@@ -98,10 +77,73 @@
     "text": "ggplot(df, aes(x = Duration_sec)) +\n  geom_histogram(bins = 40) +\n  theme_minimal() +\n  labs(\n    title = \"Distribution of Track Lengths\",\n    x = \"Track Duration (seconds)\",\n    y = \"Count\"\n  )"
   },
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data",
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
     "section": "",
-    "text": "This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ndf &lt;- read.csv(\"video_game_ost_cleaned_with_seconds.csv\")\n\n\nDataset\nThis dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.\nEach row represents one track and includes\n\ngame\nyear\nera\ntrack title\nduration in seconds\n\n\n\nGames Included\n\nunique(df$game)\n\n [1] \"Halo\"                                \n [2] \"Metal Gear Solid\"                    \n [3] \"Super Mario 64\"                      \n [4] \"The Legend of Zelda: Ocarina of Time\"\n [5] \"Mega Man\"                            \n [6] \"Sonic The Hedgehog\"                  \n [7] \"Super Mario Bros\"                    \n [8] \"The Legend of Zelda\"                 \n [9] \"Minecraft\"                           \n[10] \"Skyrim\"                              \n[11] \"The Last of Us\""
+    "text": "This project shows that video game soundtracks expanded dramatically over time, reflecting advances in storage capacity, audio hardware, and the growing cinematic ambitions of game design."
+  },
+  {
+    "objectID": "conclusion.html#one-sentence-result",
+    "href": "conclusion.html#one-sentence-result",
+    "title": "Conclusion",
+    "section": "",
+    "text": "This project shows that video game soundtracks expanded dramatically over time, reflecting advances in storage capacity, audio hardware, and the growing cinematic ambitions of game design."
+  },
+  {
+    "objectID": "conclusion.html#main-findings",
+    "href": "conclusion.html#main-findings",
+    "title": "Conclusion",
+    "section": "Main Findings",
+    "text": "Main Findings\nThe analysis highlights several trends across technological eras:\n\nnewer games tend to include more tracks per soundtrack\ntotal soundtrack run time increased significantly over time\nearly games relied more heavily on short looping musical structures due to hardware limitations\n\nTogether, these patterns illustrate how technological constraints shaped the musical structure of early games, while modern systems allow far larger and more varied soundtracks."
+  },
+  {
+    "objectID": "conclusion.html#interpretation",
+    "href": "conclusion.html#interpretation",
+    "title": "Conclusion",
+    "section": "Interpretation",
+    "text": "Interpretation\nThese results suggest that the evolution of video game music is closely tied to technological development. Early systems such as arcade machines and 8-bit consoles could only generate a small number of sound channels and had extremely limited storage capacity. As a result, composers created short, looping melodies designed to maximize musical impact within severe technical constraints.\nAs hardware improved through the 16-bit era, CD-based systems, and modern consoles, composers gained access to greater storage space, higher audio fidelity, and the ability to incorporate orchestral recordings and longer compositions. Modern games now frequently feature cinematic soundtracks that rival film scores in scale and complexity."
+  },
+  {
+    "objectID": "conclusion.html#future-work",
+    "href": "conclusion.html#future-work",
+    "title": "Conclusion",
+    "section": "Future Work",
+    "text": "Future Work\nFuture research could expand this analysis in several directions:\n\nincorporating a larger data set of games across more genres and eras\nextracting audio features such as tempo, instrumentation, or harmonic complexity\ncomparing soundtrack structure across different game franchises or developers\n\nSuch work would help further illuminate how technological change, artistic practice, and player expectations interact in shaping video game music."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Home",
+    "section": "",
+    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
+  },
+  {
+    "objectID": "index.html#research-question",
+    "href": "index.html#research-question",
+    "title": "Home",
+    "section": "Research Question",
+    "text": "Research Question\nHow has the scale of video game soundtracks changed across technological eras?"
+  },
+  {
+    "objectID": "index.html#what-this-site-shows",
+    "href": "index.html#what-this-site-shows",
+    "title": "Home",
+    "section": "What this site shows",
+    "text": "What this site shows\n\nhow many tracks different games contain\nhow soundtrack runtime changes over time\nhow track-length distributions vary across eras\nwhat these patterns suggest about technological change"
+  },
+  {
+    "objectID": "index.html#history-of-video-game-music",
+    "href": "index.html#history-of-video-game-music",
+    "title": "Home",
+    "section": "History of Video Game Music",
+    "text": "History of Video Game Music"
   }
 ]
