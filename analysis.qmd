@@ -12,7 +12,7 @@ To compare soundtrack structure across eras, I use:
 
 These measures help show how soundtrack structure expanded as gaming technology evolved
 
-## Nmerical Summary of Data
+## Numerical Summary of Data
 ```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(dplyr)
