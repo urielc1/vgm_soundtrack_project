@@ -2,7 +2,7 @@
 title: "Conclusion"
 ---
 
-# Conclusion
+## One-sentence results
 
 This project shows that video game soundtracks expanded substantially over time.
 
