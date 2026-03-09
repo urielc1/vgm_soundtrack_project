@@ -1,9 +1,6 @@
 ---
 title: "Data"
 ---
-
-This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. 
-
 ```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(dplyr)
@@ -12,22 +9,72 @@ df <- read.csv("video_game_ost_cleaned_with_seconds.csv")
 
 ```
 
-# Dataset 
+## Data Overview
 
-This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. 
+This project uses a manually constructed dataset of video game soundtrack tracks drawn from representative games across multiple technological eras. Rather than attempting to include every video game soundtrack, I selected a set of influential and recognizable titles that help illustrate how soundtrack structure changed over time.
 
-Each row represents one track and includes 
+The dataset was designed to support a comparative analysis of video game music across historical periods, from early hardware-constrained compositions to modern cinematic and ambient scores.
 
-- game 
-- year 
-- era 
-- track title 
-- duration in seconds
+## How the Data Was Collected
 
+The soundtrack data was collected manually from publicly available soundtrack listings and video game music databases. For each selected game, I recorded the individual track titles and their track lengths. Each track was entered as a separate observation in the dataset.
+
+Games were chosen to represent major shifts in game music history, including:
+
+- early arcade and 8-bit sound design
+
+- 16-bit expansion and richer console audio
+
+- the CD / early 3D era
+
+- modern large-scale orchestral and ambient soundtracks
+
+This approach allows the dataset to function as a small but focused sample of soundtrack history rather than a complete archive.
+
+
+## Dataset Structure 
+Each row in the dataset represents one soundtrack track. The dataset includes the following variables:
+
+- game – the video game title
+
+- year – the release year of the game
+
+- era – the technological era the game belongs to
+
+- track title – the title of the soundtrack piece
+
+- Duration_sec – the track length converted into seconds
+
+Track durations were standardized into seconds so they could be analyzed numerically across games and eras.
+
+
+## Why these Variables Matter
+The main goal of the project is to examine how the scale and structure of video game soundtracks changed over time. Because of this, the most important variables are:
+
+- number of tracks per game
+
+- total soundtrack runtime
+
+- average track length
+
+- distribution of track lengths
+
+These measures help show how soundtrack design expanded alongside improvements in hardware, storage, and audio production.
 
 # Games Included 
 
 ```{r}
 unique(df$game)
 ```
+## Analytical Approach
+
+After constructing and cleaning the dataset, I grouped tracks by game in order to calculate summary measures such as:
+
+- total number of tracks per soundtrack
+
+- total runtime of each soundtrack
+
+- average track length
+
+These metrics make it possible to compare soundtrack structure across technological eras and to test the broader idea that early games relied on shorter, more limited musical material while later games supported larger and more varied soundtrack design.
 

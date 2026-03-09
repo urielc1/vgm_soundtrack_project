@@ -163,8 +163,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset">Dataset</a></li>
-  <li><a href="#games-included" id="toc-games-included" class="nav-link" data-scroll-target="#games-included">Games Included</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link active" data-scroll-target="#data-overview">Data Overview</a></li>
+  <li><a href="#how-the-data-was-collected" id="toc-how-the-data-was-collected" class="nav-link" data-scroll-target="#how-the-data-was-collected">How the Data Was Collected</a></li>
+  <li><a href="#dataset-structure" id="toc-dataset-structure" class="nav-link" data-scroll-target="#dataset-structure">Dataset Structure</a></li>
+  <li><a href="#why-these-variables-matter" id="toc-why-these-variables-matter" class="nav-link" data-scroll-target="#why-these-variables-matter">Why these Variables Matter</a></li>
+  <li><a href="#games-included" id="toc-games-included" class="nav-link" data-scroll-target="#games-included">Games Included</a>
+  <ul class="collapse">
+  <li><a href="#analytical-approach" id="toc-analytical-approach" class="nav-link" data-scroll-target="#analytical-approach">Analytical Approach</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -190,24 +196,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"video_game_ost_cleaned_with_seconds.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="dataset" class="level1">
-<h1>Dataset</h1>
-<p>This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.</p>
-<p>Each row represents one track and includes</p>
+<section id="data-overview" class="level2">
+<h2 class="anchored" data-anchor-id="data-overview">Data Overview</h2>
+<p>This project uses a manually constructed dataset of video game soundtrack tracks drawn from representative games across multiple technological eras. Rather than attempting to include every video game soundtrack, I selected a set of influential and recognizable titles that help illustrate how soundtrack structure changed over time.</p>
+<p>The dataset was designed to support a comparative analysis of video game music across historical periods, from early hardware-constrained compositions to modern cinematic and ambient scores.</p>
+</section>
+<section id="how-the-data-was-collected" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-data-was-collected">How the Data Was Collected</h2>
+<p>The soundtrack data was collected manually from publicly available soundtrack listings and video game music databases. For each selected game, I recorded the individual track titles and their track lengths. Each track was entered as a separate observation in the dataset.</p>
+<p>Games were chosen to represent major shifts in game music history, including:</p>
 <ul>
-<li>game</li>
-<li>year</li>
-<li>era</li>
-<li>track title</li>
-<li>duration in seconds</li>
+<li><p>early arcade and 8-bit sound design</p></li>
+<li><p>16-bit expansion and richer console audio</p></li>
+<li><p>the CD / early 3D era</p></li>
+<li><p>modern large-scale orchestral and ambient soundtracks</p></li>
 </ul>
+<p>This approach allows the dataset to function as a small but focused sample of soundtrack history rather than a complete archive.</p>
+</section>
+<section id="dataset-structure" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-structure">Dataset Structure</h2>
+<p>Each row in the dataset represents one soundtrack track. The dataset includes the following variables:</p>
+<ul>
+<li><p>game – the video game title</p></li>
+<li><p>year – the release year of the game</p></li>
+<li><p>era – the technological era the game belongs to</p></li>
+<li><p>track title – the title of the soundtrack piece</p></li>
+<li><p>Duration_sec – the track length converted into seconds</p></li>
+</ul>
+<p>Track durations were standardized into seconds so they could be analyzed numerically across games and eras.</p>
+</section>
+<section id="why-these-variables-matter" class="level2">
+<h2 class="anchored" data-anchor-id="why-these-variables-matter">Why these Variables Matter</h2>
+<p>The main goal of the project is to examine how the scale and structure of video game soundtracks changed over time. Because of this, the most important variables are:</p>
+<ul>
+<li><p>number of tracks per game</p></li>
+<li><p>total soundtrack runtime</p></li>
+<li><p>average track length</p></li>
+<li><p>distribution of track lengths</p></li>
+</ul>
+<p>These measures help show how soundtrack design expanded alongside improvements in hardware, storage, and audio production.</p>
 </section>
 <section id="games-included" class="level1">
 <h1>Games Included</h1>
@@ -227,8 +260,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 [11] "The Last of Us"                      </code></pre>
 </div>
 </div>
+<section id="analytical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-approach">Analytical Approach</h2>
+<p>After constructing and cleaning the dataset, I grouped tracks by game in order to calculate summary measures such as:</p>
+<ul>
+<li><p>total number of tracks per soundtrack</p></li>
+<li><p>total runtime of each soundtrack</p></li>
+<li><p>average track length</p></li>
+</ul>
+<p>These metrics make it possible to compare soundtrack structure across technological eras and to test the broader idea that early games relied on shorter, more limited musical material while later games supported larger and more varied soundtrack design.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
