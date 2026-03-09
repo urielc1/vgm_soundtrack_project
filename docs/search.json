@@ -75,5 +75,12 @@
     "title": "Data",
     "section": "",
     "text": "This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\ndf &lt;- read.csv(\"video_game_ost_cleaned_with_seconds.csv\")\n\n\nDataset\nThis dataset was manually constructed from representative video game soundtrack tracklists across multiple eras.\nEach row represents one track and includes\n\ngame\nyear\nera\ntrack title\nduration in seconds\n\n\n\nGames Included\n\nunique(df$game)\n\n [1] \"Halo\"                                \n [2] \"Metal Gear Solid\"                    \n [3] \"Super Mario 64\"                      \n [4] \"The Legend of Zelda: Ocarina of Time\"\n [5] \"Mega Man\"                            \n [6] \"Sonic The Hedgehog\"                  \n [7] \"Super Mario Bros\"                    \n [8] \"The Legend of Zelda\"                 \n [9] \"Minecraft\"                           \n[10] \"Skyrim\"                              \n[11] \"The Last of Us\""
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Home",
+    "section": "",
+    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
   }
 ]
