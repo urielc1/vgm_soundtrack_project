@@ -12,6 +12,8 @@ website:
         text: Data
       - href: analysis.qmd
         text: Analysis
+      - href: listening.qmd
+        text: Listening
       - href: conclusion.qmd
         text: Conclusion
 
@@ -20,3 +22,4 @@ format:
     theme: lux
     toc: true
     page-layout: full
+    css: styles.css
