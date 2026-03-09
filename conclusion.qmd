@@ -31,3 +31,14 @@ Future research could expand this analysis in several directions:
 - comparing soundtrack structure across different game franchises or developers
 
 Such work would help further illuminate how technological change, artistic practice, and player expectations interact in shaping video game music. 
+
+
+## References
+
+Collins, Karen. 2008. *Game Sound: An Introduction to the History, Theory, and Practice of Video Game Music and Sound Design.* MIT Press.
+
+Collins, Karen. 2013. *Playing with Sound: A Theory of Interacting with Sound and Music in Video Games.* MIT Press.
+
+Lerner, Neil, ed. 2013. *Music in Video Games: Studying Play.* Routledge.
+
+Summers, Tim. 2016. *Understanding Video Game Music.* Cambridge University Press.
