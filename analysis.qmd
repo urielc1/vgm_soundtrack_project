@@ -12,7 +12,7 @@ To compare soundtrack structure across eras, I use:
 
 These measures help show how soundtrack structure expanded as gaming technology evolved
 
-# Number of Tracks per Game Over Time
+## Number of Tracks per Game Over Time
 ```{r}
 library(ggplot2)
 library(dplyr)
@@ -32,7 +32,7 @@ game_summary <- df |>
 game_summary
 ```
 
-# Total Soundtrack Runtime Over Time
+## Total Soundtrack Runtime Over Time
 ```{r}
 ggplot(game_summary, aes(x = year, y = total_tracks)) +
   geom_point(size = 3) +
@@ -46,7 +46,7 @@ ggplot(game_summary, aes(x = year, y = total_tracks)) +
 ```
 
 
-# Runtime by Era
+## Runtime by Era
 ```{r}
 ggplot(game_summary, aes(x = era, y = total_runtime_min)) +
   geom_boxplot() +
@@ -59,7 +59,7 @@ ggplot(game_summary, aes(x = era, y = total_runtime_min)) +
 ```
 
 
-# Distribution of Track Lengths
+## Distribution of Track Lengths
 ```{r}
 ggplot(df, aes(x = Duration_sec)) +
   geom_histogram(bins = 40) +
