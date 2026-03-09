@@ -12,14 +12,13 @@ To compare soundtrack structure across eras, I use:
 
 These measures help show how soundtrack structure expanded as gaming technology evolved
 
-## Numerical Summary of Data
 ```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(dplyr)
 
-df <- read.csv("video_game_ost_cleaned_with_seconds.csv")
+tracks <- read.csv("video_game_ost_cleaned_with_seconds.csv", stringsAsFactors = FALSE)
 
-game_summary <- df |>
+game_summary <- tracks |>
   group_by(game, year, era) |>
   summarise(
     total_tracks = n(),
@@ -35,7 +34,8 @@ This table summarizes key structural characteristics of each game's soundtrack. 
 
 
 ## Number of Tracks per Game Over Time
-```{r, message=FALSE, waring = FALSE}
+
+```{r, message=FALSE, warning=FALSE}
 ggplot(game_summary, aes(x = year, y = total_tracks)) +
   geom_point(size = 3) +
   geom_smooth(method = "lm", se = FALSE) +
@@ -49,7 +49,8 @@ ggplot(game_summary, aes(x = year, y = total_tracks)) +
 This plot shows how the number of tracks included in a game's soundtrack changes over time. Each point represents a single game in the dataset, and the fitted trend line illustrates the overall direction of change. Early arcade and 8-bit titles typically contained relatively few tracks because hardware limitations restricted storage and sound channels. As gaming technology advanced, especially with CD-based systems and modern digital storage, soundtracks expanded dramatically. Modern games often include dozens of tracks, reflecting the shift toward more cinematic and atmospheric musical design.
 
 ## Runtime by Era
-```{r, message=FALSE, warning = FALSE}
+
+```{r, message=FALSE, warning=FALSE}
 ggplot(game_summary, aes(x = era, y = total_runtime_min)) +
   geom_boxplot() +
   theme_minimal() +
@@ -61,9 +62,11 @@ ggplot(game_summary, aes(x = era, y = total_runtime_min)) +
 ```
 
 This boxplot compares the total runtime of game soundtracks across technological eras. The distribution highlights how early games tended to have shorter overall soundtracks, often consisting of brief looping musical cues. Later eras show significantly greater runtime variability and longer overall soundtracks. This change reflects the growing importance of music in shaping narrative atmosphere, exploration, and emotional tone in modern video games.
+
 ## Distribution of Track Lengths
-```{r,message=FALSE, warning=FALSE}
-ggplot(df, aes(x = Duration_sec)) +
+
+```{r, message=FALSE, warning=FALSE}
+ggplot(tracks, aes(x = Duration_sec)) +
   geom_histogram(bins = 40) +
   theme_minimal() +
   labs(
