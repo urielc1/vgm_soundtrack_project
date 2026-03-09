@@ -166,9 +166,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#methods" id="toc-methods" class="nav-link active" data-scroll-target="#methods">Methods</a>
   <ul class="collapse">
   <li><a href="#nmerical-summary-of-data" id="toc-nmerical-summary-of-data" class="nav-link" data-scroll-target="#nmerical-summary-of-data">Nmerical Summary of Data</a></li>
-  <li><a href="#total-soundtrack-runtime-over-time" id="toc-total-soundtrack-runtime-over-time" class="nav-link" data-scroll-target="#total-soundtrack-runtime-over-time">Total Soundtrack Runtime Over Time</a></li>
+  <li><a href="#number-of-tracks-per-game-over-time" id="toc-number-of-tracks-per-game-over-time" class="nav-link" data-scroll-target="#number-of-tracks-per-game-over-time">Number of Tracks per Game Over Time</a></li>
   <li><a href="#runtime-by-era" id="toc-runtime-by-era" class="nav-link" data-scroll-target="#runtime-by-era">Runtime by Era</a></li>
-  <li><a href="#distribution-of-track-lengths" id="toc-distribution-of-track-lengths" class="nav-link" data-scroll-target="#distribution-of-track-lengths">Distribution of Track Lengths</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -244,9 +243,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 1 more variable: total_runtime_min &lt;dbl&gt;</code></pre>
 </div>
 </div>
+<p>This table summarizes key structural characteristics of each game’s soundtrack. For every game in the dataset, I calculated the total number of tracks, the total runtime of the soundtrack in seconds, and the average length of individual tracks. Converting total runtime into minutes allows easier comparison across titles and eras. These measures provide a baseline view of how soundtrack scale varies across games released at different technological stages of video game history.</p>
 </section>
-<section id="total-soundtrack-runtime-over-time" class="level2">
-<h2 class="anchored" data-anchor-id="total-soundtrack-runtime-over-time">Total Soundtrack Runtime Over Time</h2>
+<section id="number-of-tracks-per-game-over-time" class="level2">
+<h2 class="anchored" data-anchor-id="number-of-tracks-per-game-over-time">Number of Tracks per Game Over Time</h2>
 <div class="cell" data-waring="false">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(game_summary, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> total_tracks)) <span class="sc">+</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
@@ -265,6 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This plot shows how the number of tracks included in a game’s soundtrack changes over time. Each point represents a single game in the dataset, and the fitted trend line illustrates the overall direction of change. Early arcade and 8-bit titles typically contained relatively few tracks because hardware limitations restricted storage and sound channels. As gaming technology advanced, especially with CD-based systems and modern digital storage, soundtracks expanded dramatically. Modern games often include dozens of tracks, reflecting the shift toward more cinematic and atmospheric musical design.</p>
 </section>
 <section id="runtime-by-era" class="level2">
 <h2 class="anchored" data-anchor-id="runtime-by-era">Runtime by Era</h2>
@@ -285,9 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-<section id="distribution-of-track-lengths" class="level2">
-<h2 class="anchored" data-anchor-id="distribution-of-track-lengths">Distribution of Track Lengths</h2>
+<p>This boxplot compares the total runtime of game soundtracks across technological eras. The distribution highlights how early games tended to have shorter overall soundtracks, often consisting of brief looping musical cues. Later eras show significantly greater runtime variability and longer overall soundtracks. This change reflects the growing importance of music in shaping narrative atmosphere, exploration, and emotional tone in modern video games. ## Distribution of Track Lengths</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Duration_sec)) <span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">40</span>) <span class="sc">+</span></span>
@@ -305,6 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>The histogram shows the distribution of individual track lengths across the entire dataset. Short tracks are common in early video games because music often consisted of short loops designed to repeat continuously during gameplay. In later eras, track durations become more varied and often longer, reflecting the shift toward composed pieces that function more like traditional film or orchestral scoring. This change illustrates how video game music evolved from simple functional loops into more complex musical structures.</p>
 
 
 </section>
