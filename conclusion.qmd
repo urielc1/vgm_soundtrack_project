@@ -2,24 +2,32 @@
 title: "Conclusion"
 ---
 
-## One-sentence results
+## One-Sentence Result
 
-This project shows that video game soundtracks expanded substantially over time.
+This project shows that video game soundtracks expanded dramatically over time, reflecting advances in storage capacity, audio hardware, and the growing cinematic ambitions of game design. 
 
 ## Main Findings
 
-- newer games tend to include more tracks
-- soundtrack runtime increased across technological eras
-- early games relied more heavily on short looping musical structures
+The analysis highlights several trends across technological eras: 
+
+- newer games tend to include more tracks per soundtrack
+- total soundtrack run time increased significantly over time
+- early games relied more heavily on short looping musical structures due to hardware limitations
+
+Together, these patterns illustrate how technological constraints shaped the musical structure of early games, while modern systems allow far larger and more varied soundtracks. 
 
 ## Interpretation
 
-These patterns suggest that technological change shaped not just audio quality, but also the structure and scale of game music itself.
+These results suggest that the evolution of video game music is closely tied to technological development. Early systems such as arcade machines and 8-bit consoles could only generate a small number of sound channels and had extremely limited storage capacity. As a result, composers created short, looping melodies designed to maximize musical impact within severe technical constraints.
+
+As hardware improved through the 16-bit era, CD-based systems, and modern consoles, composers gained access to greater storage space, higher audio fidelity, and the ability to incorporate orchestral recordings and longer compositions. Modern games now frequently feature cinematic soundtracks that rival film scores in scale and complexity.
 
 ## Future Work
 
-Future research could examine:
+Future research could expand this analysis in several directions:
 
-- more games per era
-- local audio feature extraction
-- emotional or stylistic differences across franchises
+- incorporating a larger data set of games across more genres and eras
+- extracting audio features such as tempo, instrumentation, or harmonic complexity
+- comparing soundtrack structure across different game franchises or developers
+
+Such work would help further illuminate how technological change, artistic practice, and player expectations interact in shaping video game music. 
