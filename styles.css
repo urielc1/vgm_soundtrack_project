@@ -1,0 +1,15 @@
+.page-columns {
+  max-width: none !important;
+}
+
+main.content {
+  max-width: none !important;
+}
+
+.container-fluid {
+  max-width: none !important;
+}
+
+.container {
+  max-width: none !important;
+}
