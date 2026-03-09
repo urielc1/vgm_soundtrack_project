@@ -4,7 +4,7 @@ title: "Data"
 
 This dataset was manually constructed from representative video game soundtrack tracklists across multiple eras. 
 
-```{r, warning=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(dplyr)
 
