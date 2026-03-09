@@ -45,22 +45,22 @@
     "objectID": "conclusion.html#main-findings",
     "href": "conclusion.html#main-findings",
     "title": "Conclusion",
-    "section": "Main Findings",
-    "text": "Main Findings\n\nnewer games tend to include more tracks\nsoundtrack runtime increased across technological eras\nearly games relied more heavily on short looping musical structures"
+    "section": "",
+    "text": "newer games tend to include more tracks\nsoundtrack runtime increased across technological eras\nearly games relied more heavily on short looping musical structures"
   },
   {
     "objectID": "conclusion.html#interpretation",
     "href": "conclusion.html#interpretation",
     "title": "Conclusion",
-    "section": "Interpretation",
-    "text": "Interpretation\nThese patterns suggest that technological change shaped not just audio quality, but also the structure and scale of game music itself."
+    "section": "",
+    "text": "These patterns suggest that technological change shaped not just audio quality, but also the structure and scale of game music itself."
   },
   {
     "objectID": "conclusion.html#future-work",
     "href": "conclusion.html#future-work",
     "title": "Conclusion",
-    "section": "Future Work",
-    "text": "Future Work\nFuture research could examine:\n\nmore games per era\nlocal audio feature extraction\nemotional or stylistic differences across franchises"
+    "section": "",
+    "text": "Future research could examine:\n\nmore games per era\nlocal audio feature extraction\nemotional or stylistic differences across franchises"
   },
   {
     "objectID": "analysis.html",
@@ -110,5 +110,12 @@
     "title": "Analysis",
     "section": "",
     "text": "ggplot(df, aes(x = Duration_sec)) +\n  geom_histogram(bins = 40) +\n  theme_minimal() +\n  labs(\n    title = \"Distribution of Track Lengths\",\n    x = \"Track Duration (seconds)\",\n    y = \"Count\"\n  )"
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "This project shows that video game soundtracks expanded substantially over time.\n\n\n\nnewer games tend to include more tracks\nsoundtrack runtime increased across technological eras\nearly games relied more heavily on short looping musical structures\n\n\n\n\nThese patterns suggest that technological change shaped not just audio quality, but also the structure and scale of game music itself.\n\n\n\nFuture research could examine:\n\nmore games per era\nlocal audio feature extraction\nemotional or stylistic differences across franchises"
   }
 ]
