@@ -1,73 +1,71 @@
 ---
 title: "Home"
 ---
-::{html}
+
 <div class="landing-wrap">
 
-<div class="status-pill">Analyzing Data...</div>
+  <div class="status-pill">Analyzing Data...</div>
 
-<section class="hero-screen">
-  <div class="hero-copy">
-    <h1 class="hero-mega">The Sound of <span>Resonance.</span></h1>
+  <section class="hero-screen">
+    <div class="hero-copy">
+      <h1 class="hero-mega">
+        The Sound of <span>Resonance.</span>
+      </h1>
 
-    <p class="hero-lead">
-      Video game music evolved from technical hardware loops into larger,
-      more varied soundtrack structures. This project examines how
-      soundtrack scale changed across technological eras through historical
-      context, listening examples, and exploratory data analysis.
+      <p class="hero-lead">
+        Video game music evolved from technical hardware loops into larger,
+        more varied soundtrack structures. This project examines how
+        soundtrack scale changed across technological eras through historical
+        context, listening examples, and exploratory data analysis.
+      </p>
+    </div>
+  </section>
+
+  <section class="overview-panel">
+    <div class="overview-card">
+      <h3>Research Question</h3>
+      <p>
+        How has the scale of video game soundtracks changed across technological eras?
+      </p>
+    </div>
+
+    <div class="overview-grid">
+      <div class="scope-card">
+        <h4>Historical Timeline</h4>
+        <p>Interactive context for major shifts in game music history.</p>
+      </div>
+
+      <div class="scope-card">
+        <h4>Dataset</h4>
+        <p>A manually constructed soundtrack dataset across multiple eras.</p>
+      </div>
+
+      <div class="scope-card">
+        <h4>Analysis</h4>
+        <p>Track counts, runtime, and structural soundtrack comparisons.</p>
+      </div>
+
+      <div class="scope-card">
+        <h4>Listening</h4>
+        <p>Embedded examples that let users hear musical change directly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <h2>History of Video Game Music</h2>
+    <p class="section-intro">
+      The timeline below highlights key moments in the evolution of video game music,
+      from early electronic loops to modern cinematic scoring.
     </p>
-  </div>
-</section>
 
-<section class="overview-panel">
-  <div class="overview-card">
-    <h3>Research Question</h3>
-    <p>
-      How has the scale of video game soundtracks changed across technological eras?
-    </p>
-  </div>
-
-  <div class="overview-grid">
-    <div class="scope-card">
-      <h4>Historical Timeline</h4>
-      <p>Interactive context for major shifts in game music history.</p>
-    </div>
-
-    <div class="scope-card">
-      <h4>Dataset</h4>
-      <p>A manually constructed soundtrack dataset across multiple eras.</p>
-    </div>
-
-    <div class="scope-card">
-      <h4>Analysis</h4>
-      <p>Track counts, runtime, and structural soundtrack comparisons.</p>
-    </div>
-
-    <div class="scope-card">
-      <h4>Listening</h4>
-      <p>Embedded examples that let users hear musical change directly.</p>
-    </div>
-  </div>
-</section>
-
-<section class="timeline-section">
-  <h2>History of Video Game Music</h2>
-  <p class="section-intro">
-    The timeline below highlights key moments in the evolution of video game music,
-    from early electronic loops to modern cinematic scoring.
-  </p>
-
-  <iframe
-    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSriMzVf35i-a6C6ICckzYUZZ7CMFI9_KO1pHxIlgXtCi2f-7xcDrE-UWyzM-jGd3z7d8O3ND4ysOlg&font=Default&lang=en&initial_zoom=2&width=100%25&height=650"
-    width="100%"
-    height="750"
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSriMzVf35i-a6C6ICckzYUZZ7CMFI9_KO1pHxIlgXtCi2f-7xcDrE-UWyzM-jGd3z7d8O3ND4ysOlg&font=Default&lang=en&initial_zoom=2&width=100%25&height=650'
+    width='100%'
+    height='750'
     webkitallowfullscreen
     mozallowfullscreen
     allowfullscreen
-    frameborder="0">
-  </iframe>
-</section>
+    frameborder='0'></iframe>
+  </section>
 
 </div>
-
-:::
