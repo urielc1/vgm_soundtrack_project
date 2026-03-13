@@ -1,41 +1,64 @@
-/* =========================
-   Base
-========================= */
+/* =========================================
+   Global background
+========================================= */
 body {
-  background: #05070a;
+  position: relative;
+  background: linear-gradient(
+    -45deg,
+    #050505,
+    #0a0a0a,
+    #0f1f0f,
+    #0a0a0a
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 18s ease infinite;
   color: #f5f5f5;
   overflow-x: hidden;
   font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-/* subtle grid background */
+/* subtle animated retro grid overlay */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -2;
   pointer-events: none;
+  z-index: -1;
   background-image:
-    linear-gradient(rgba(106,255,106,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(106,255,106,0.04) 1px, transparent 1px);
-  background-size: 42px 42px;
-  opacity: 0.35;
+    linear-gradient(rgba(106, 255, 106, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(106, 255, 106, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 30s linear infinite;
+  opacity: 0.22;
 }
 
-/* navbar */
+/* gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* grid animation */
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(40px, 40px); }
+}
+
+/* =========================================
+   Navbar
+========================================= */
 .navbar {
-  background-color: rgba(5, 7, 10, 0.95) !important;
-  border-bottom: 1px solid rgba(106,255,106,0.18);
-  backdrop-filter: blur(10px);
+  background-color: rgba(11, 11, 11, 0.95) !important;
+  border-bottom: 2px solid #6aff6a;
+  backdrop-filter: blur(8px);
 }
 
 .navbar a,
 .navbar-brand {
   color: #f5f5f5 !important;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .navbar a:hover,
@@ -43,187 +66,212 @@ body::before {
   color: #6aff6a !important;
 }
 
-/* content container */
+/* =========================================
+   Main content area
+========================================= */
 main.content {
-  background: transparent !important;
-  box-shadow: none !important;
-  max-width: 1400px;
-  padding: 0;
-}
-
-/* hide default big page title if needed */
-.quarto-title-block {
-  display: none;
-}
-
-/* =========================
-   Landing page
-========================= */
-.landing-wrap {
-  padding: 3rem 1.5rem 4rem 1.5rem;
-}
-
-.status-pill {
-  display: inline-block;
-  margin-bottom: 2rem;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
-  background: rgba(106,255,106,0.1);
-  border: 1px solid rgba(106,255,106,0.22);
-  color: #7af7b7;
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.hero-screen {
-  min-height: 58vh;
-  display: flex;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.hero-copy {
-  max-width: 1100px;
-}
-
-.hero-mega {
-  font-size: clamp(3.5rem, 9vw, 7.5rem);
-  line-height: 0.95;
-  font-weight: 900;
-  color: #f8f8f8 !important;
-  margin: 0 0 1.2rem 0;
-  letter-spacing: -0.03em;
-}
-
-.hero-mega span {
-  background: linear-gradient(90deg, #7af7b7 0%, #7cb9ff 55%, #8b5cf6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 20px rgba(122,247,183,0.18);
-}
-
-.hero-lead {
-  max-width: 1000px;
-  font-size: clamp(1.15rem, 2.4vw, 1.9rem);
-  line-height: 1.6;
-  color: #b8c0d0;
-  margin: 0;
-}
-
-.overview-panel {
-  margin-bottom: 3rem;
-}
-
-.overview-card {
-  margin-bottom: 1.5rem;
-  padding: 1.4rem;
+  background-color: rgba(18, 18, 18, 0.9);
+  padding: 2rem;
   border-radius: 18px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
-  box-shadow: 0 0 24px rgba(106,255,106,0.05);
+  box-shadow: 0 0 25px rgba(106, 255, 106, 0.08);
+  max-width: 1200px;
 }
 
-.overview-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-  color: #7af7b7 !important;
-  font-size: 1.2rem;
+/* =========================================
+   Typography
+========================================= */
+h1, h2, h3 {
+  color: #6aff6a;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(106, 255, 106, 0.2);
 }
 
-.overview-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.scope-card {
-  padding: 1.2rem;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.025);
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.scope-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(122,247,183,0.28);
-}
-
-.scope-card h4 {
-  margin-top: 0;
-  margin-bottom: 0.45rem;
-  color: #ffffff;
-  font-size: 1rem;
+h1 {
+  font-size: 3rem;
   font-weight: 800;
 }
 
-.scope-card p {
-  margin: 0;
-  color: #c5ccda;
-  line-height: 1.65;
-  font-size: 0.98rem;
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
-/* timeline */
-.timeline-section {
-  margin-top: 3rem;
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.timeline-section h2 {
-  color: #7af7b7 !important;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.section-intro {
-  color: #bcc5d4;
-  max-width: 900px;
-  margin-bottom: 1.2rem;
+p, li {
+  color: #e8e8e8;
+  line-height: 1.7;
   font-size: 1.05rem;
 }
 
-.timeline-section iframe {
-  border-radius: 18px;
-  box-shadow: 0 0 28px rgba(106,255,106,0.07);
-  background: #111;
+/* =========================================
+   Links
+========================================= */
+a {
+  color: #6ac6ff;
+  text-decoration: none;
 }
 
-/* toc */
-#TOC,
-.sidebar nav[role="doc-toc"] {
-  color: #d7dce6 !important;
+a:hover {
+  color: #9be7ff;
+  text-decoration: underline;
+}
+
+/* =========================================
+   TOC / sidebar
+========================================= */
+#TOC, .toc-active, .sidebar nav[role="doc-toc"] {
+  color: #f5f5f5 !important;
 }
 
 .sidebar nav[role="doc-toc"] a {
-  color: #d7dce6 !important;
-  font-weight: 600;
+  color: #d6d6d6 !important;
 }
 
 .sidebar nav[role="doc-toc"] a:hover,
 .sidebar nav[role="doc-toc"] .active {
-  color: #7af7b7 !important;
+  color: #6aff6a !important;
 }
 
-/* code */
-pre, code, blockquote {
-  background-color: #1f2329;
+/* =========================================
+   Code blocks
+========================================= */
+blockquote,
+pre,
+code {
+  background-color: #222222;
   color: #f5f5f5;
 }
 
-/* mobile */
+pre {
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* =========================================
+   Hero section
+   Add matching HTML in index.qmd
+========================================= */
+.hero-block {
+  margin-bottom: 3rem;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.05;
+  color: #ffffff !important;
+  margin-bottom: 0.8rem;
+}
+
+.hero-title span {
+  color: #6aff6a;
+  text-shadow: 0 0 14px rgba(106, 255, 106, 0.35);
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #d8d8d8;
+  max-width: 850px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: rgba(106, 255, 106, 0.12);
+  border: 1px solid rgba(106, 255, 106, 0.28);
+  color: #6aff6a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   Feature / summary cards
+========================================= */
+.project-card {
+  margin: 2rem 0 3rem 0;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 24px rgba(106, 255, 106, 0.06);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.scope-card {
+  padding: 1.2rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.scope-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(106, 255, 106, 0.28);
+}
+
+.scope-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.scope-card p {
+  margin-bottom: 0;
+  color: #d0d0d0;
+}
+
+/* =========================================
+   Images and embeds
+========================================= */
+img {
+  border-radius: 12px;
+}
+
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(106, 255, 106, 0.08);
+}
+
+/* =========================================
+   Mobile responsiveness
+========================================= */
 @media (max-width: 900px) {
-  .overview-grid {
+  .scope-grid {
     grid-template-columns: 1fr;
   }
 
-  .landing-wrap {
-    padding: 2rem 1rem 3rem 1rem;
+  .hero-title {
+    font-size: 2.4rem;
   }
 
-  .hero-screen {
-    min-height: auto;
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  main.content {
+    padding: 1.2rem;
   }
 }
