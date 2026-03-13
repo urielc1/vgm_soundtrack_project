@@ -165,6 +165,41 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Analyzing Data…\n\n\n\n  &lt;h1 class=\"hero-mega\"&gt;The Sound of &lt;span&gt;Resonance.&lt;/span&gt;&lt;/h1&gt;\n\n  &lt;p class=\"hero-lead\"&gt;\n    Video game music evolved from technical hardware loops into larger,\n    more varied soundtrack structures. This project examines how\n    soundtrack scale changed across technological eras through historical\n    context, listening examples, and exploratory data analysis.\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n  &lt;h3&gt;Research Question&lt;/h3&gt;\n  &lt;p&gt;\n    How has the scale of video game soundtracks changed across technological eras?\n  &lt;/p&gt;\n&lt;/div&gt;\n\n&lt;div class=\"overview-grid\"&gt;\n  &lt;div class=\"scope-card\"&gt;\n    &lt;h4&gt;Historical Timeline&lt;/h4&gt;\n    &lt;p&gt;Interactive context for major shifts in game music history.&lt;/p&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"scope-card\"&gt;\n    &lt;h4&gt;Dataset&lt;/h4&gt;\n    &lt;p&gt;A manually constructed soundtrack dataset across multiple eras.&lt;/p&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"scope-card\"&gt;\n    &lt;h4&gt;Analysis&lt;/h4&gt;\n    &lt;p&gt;Track counts, runtime, and structural soundtrack comparisons.&lt;/p&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"scope-card\"&gt;\n    &lt;h4&gt;Listening&lt;/h4&gt;\n    &lt;p&gt;Embedded examples that let users hear musical change directly.&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\nHistory of Video Game Music\n\n\nThe timeline below highlights key moments in the evolution of video game music, from early electronic loops to modern cinematic scoring."
+    "text": "Digital Musicology Project\n\n\nThe Sound of &lt;span&gt;Evolution&lt;/span&gt;\n\n\nA digital musicology project analyzing how video game soundtrack scale evolved from early hardware-limited compositions to modern cinematic and orchestral scores."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Home",
+    "section": "Introduction",
+    "text": "Introduction\nVideo game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
+  },
+  {
+    "objectID": "index.html#research-question",
+    "href": "index.html#research-question",
+    "title": "Home",
+    "section": "Research Question",
+    "text": "Research Question\nHow has the scale of video game soundtracks changed across technological eras?"
+  },
+  {
+    "objectID": "index.html#project-scope",
+    "href": "index.html#project-scope",
+    "title": "Home",
+    "section": "Project Scope",
+    "text": "Project Scope\n\n\n&lt;h4&gt;Track Density&lt;/h4&gt;\n&lt;p&gt;How many tracks different games contain across technological eras.&lt;/p&gt;\n\n\n&lt;h4&gt;Runtime Shift&lt;/h4&gt;\n&lt;p&gt;How total soundtrack runtime changes over time.&lt;/p&gt;\n\n\n&lt;h4&gt;Track Length Distribution&lt;/h4&gt;\n&lt;p&gt;How the lengths of individual soundtrack tracks vary across the dataset.&lt;/p&gt;\n\n\n&lt;h4&gt;Technological Change&lt;/h4&gt;\n&lt;p&gt;What these musical patterns suggest about changing hardware and storage limits.&lt;/p&gt;"
+  },
+  {
+    "objectID": "index.html#history-of-video-game-music",
+    "href": "index.html#history-of-video-game-music",
+    "title": "Home",
+    "section": "History of Video Game Music",
+    "text": "History of Video Game Music\nThe timeline below highlights key moments in the evolution of video game music, from early arcade sound effects and chip-based melodies to modern cinematic and ambient scoring. It provides historical context for the quantitative analysis presented elsewhere on the site.\n\n\nThe historical progression shown in the timeline helps frame the project’s central argument: as hardware limitations decreased and storage capacity expanded, video game soundtracks also grew in size, diversity, and compositional complexity."
+  },
+  {
+    "objectID": "index.html#why-this-matters",
+    "href": "index.html#why-this-matters",
+    "title": "Home",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nVideo game music has grown from a technical necessity into a major component of interactive storytelling. By comparing soundtrack structure across eras, this project shows how technological constraints and innovations shaped the development of one of the most recognizable forms of digital culture."
   }
 ]
