@@ -2,34 +2,37 @@
 title: "Home"
 ---
 
-<div class="landing-wrap">
+::: {.landing-wrap}
 
-  <div class="status-pill">Digital Musicology Project</div>
+::: {.status-pill}
+Digital Musicology Project
+:::
 
-  <section class="hero-screen">
-    <div class="hero-copy">
-      <div class="hero-mega">The Sound of Resonance.</div>
+::: {.hero-screen}
+::: {.hero-copy}
+::: {.hero-mega}
+The Sound of Resonance.
+:::
 
-      <p class="hero-lead">
-        A digital musicology project analyzing how video game soundtrack scale
-        evolved from early hardware-limited compositions to modern cinematic and
-        orchestral scores.
-      </p>
-    </div>
-  </section>
+::: {.hero-lead}
+A digital musicology project analyzing how video game soundtrack scale
+evolved from early hardware-limited compositions to modern cinematic and
+orchestral scores.
+:::
+:::
+:::
 
-  <section class="overview-panel">
-    <div class="overview-card">
-      <h3>Project Overview</h3>
-      <p>
-        This project investigates how the structure and scale of video game
-        soundtracks changed across technological eras. By combining a historical
-        timeline, a manually constructed dataset, listening examples, and
-        exploratory analysis, the site demonstrates how technological change
-        shaped the evolution of video game music.
-      </p>
-    </div>
-  </section>
+::: {.overview-panel}
+::: {.overview-card}
+### Project Overview
+
+This project investigates how the structure and scale of video game
+soundtracks changed across technological eras. By combining a historical
+timeline, a manually constructed dataset, listening examples, and
+exploratory analysis, the site demonstrates how technological change
+shaped the evolution of video game music.
+:::
+:::
 
 ## Introduction
 
@@ -43,27 +46,27 @@ How has the scale of video game soundtracks changed across technological eras?
 
 ## Project Scope
 
-<div class="overview-grid">
-  <div class="scope-card">
-    <h4>Historical Timeline</h4>
-    <p>Interactive context for major shifts in game music history.</p>
-  </div>
+::: {.overview-grid}
+::: {.scope-card}
+#### Historical Timeline
+Interactive context for major shifts in game music history.
+:::
 
-  <div class="scope-card">
-    <h4>Dataset</h4>
-    <p>A manually constructed soundtrack dataset across multiple eras.</p>
-  </div>
+::: {.scope-card}
+#### Dataset
+A manually constructed soundtrack dataset across multiple eras.
+:::
 
-  <div class="scope-card">
-    <h4>Analysis</h4>
-    <p>Track counts, runtime, and structural soundtrack comparisons.</p>
-  </div>
+::: {.scope-card}
+#### Analysis
+Track counts, runtime, and structural soundtrack comparisons.
+:::
 
-  <div class="scope-card">
-    <h4>Listening</h4>
-    <p>Embedded examples that let users hear musical change directly.</p>
-  </div>
-</div>
+::: {.scope-card}
+#### Listening
+Embedded examples that let users hear musical change directly.
+:::
+:::
 
 ## History of Video Game Music
 
@@ -82,4 +85,4 @@ The timeline below highlights key moments in the evolution of video game music, 
 
 Video game music has grown from a technical necessity into a major component of interactive storytelling. By comparing soundtrack structure across eras, this project shows how technological constraints and innovations shaped the development of video game composition.
 
-</div>
+:::
