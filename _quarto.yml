@@ -3,8 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "From 8-Bit Loops to Cinematic Scores"
+  title: "8-BIT TO CINEMATIC"
   navbar:
+    search: true
+    background: dark
     left:
       - href: index.qmd
         text: Home
@@ -19,7 +21,13 @@ website:
 
 format:
   html:
-    theme: lux
+    theme: none # Removing 'lux' to allow full custom control
     toc: true
+    toc-location: right
     page-layout: full
     css: styles.css
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
