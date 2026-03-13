@@ -1,9 +1,10 @@
 ---
 title: "Home"
-format: html
 ---
 
+```{=html}
 <div class="landing-wrap">
+
   <div class="status-pill">Analyzing Data...</div>
 
   <section class="hero-screen">
@@ -66,4 +67,5 @@ format: html
       allowfullscreen
       frameborder="0"></iframe>
   </section>
+
 </div>
