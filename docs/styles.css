@@ -1,197 +1,277 @@
-/* Animated dark gaming background */
-
+/* =========================================
+   Global background
+========================================= */
 body {
-
   position: relative;
-
   background: linear-gradient(
-
     -45deg,
-
     #050505,
-
     #0a0a0a,
-
     #0f1f0f,
-
     #0a0a0a
-
   );
-
   background-size: 400% 400%;
-
   animation: gradientMove 18s ease infinite;
-
   color: #f5f5f5;
-
   overflow-x: hidden;
-
+  font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-
-
-/* Subtle animated retro grid overlay */
-
+/* subtle animated retro grid overlay */
 body::before {
-
   content: "";
-
   position: fixed;
-
   inset: 0;
-
   pointer-events: none;
-
   z-index: -1;
-
   background-image:
-
-    linear-gradient(rgba(106, 255, 106, 0.06) 1px, transparent 1px),
-
-    linear-gradient(90deg, rgba(106, 255, 106, 0.06) 1px, transparent 1px);
-
+    linear-gradient(rgba(106, 255, 106, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(106, 255, 106, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
-
   animation: gridMove 30s linear infinite;
-
-  opacity: 0.35;
-
+  opacity: 0.22;
 }
 
-
-
-/* Background animation */
-
+/* gradient animation */
 @keyframes gradientMove {
-
-  0% {
-
-    background-position: 0% 50%;
-
-  }
-
-  50% {
-
-    background-position: 100% 50%;
-
-  }
-
-  100% {
-
-    background-position: 0% 50%;
-
-  }
-
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-
-
-/* Grid animation */
-
+/* grid animation */
 @keyframes gridMove {
-
-  0% {
-
-    transform: translate(0, 0);
-
-  }
-
-  100% {
-
-    transform: translate(40px, 40px);
-
-  }
-
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(40px, 40px); }
 }
 
-
-
-/* Navbar styling */
-
+/* =========================================
+   Navbar
+========================================= */
 .navbar {
-
-  background-color: #0b0b0b !important;
-
+  background-color: rgba(11, 11, 11, 0.95) !important;
   border-bottom: 2px solid #6aff6a;
-
+  backdrop-filter: blur(8px);
 }
-
-
 
 .navbar a,
-
 .navbar-brand {
-
   color: #f5f5f5 !important;
-
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
+.navbar a:hover,
+.navbar-brand:hover {
+  color: #6aff6a !important;
+}
 
+/* =========================================
+   Main content area
+========================================= */
+main.content {
+  background-color: rgba(18, 18, 18, 0.9);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(106, 255, 106, 0.08);
+  max-width: 1200px;
+}
 
-/* Headers */
-
+/* =========================================
+   Typography
+========================================= */
 h1, h2, h3 {
-
   color: #6aff6a;
-
   letter-spacing: 1px;
-
-  text-shadow: 0 0 10px rgba(106, 255, 106, 0.25);
-
+  text-shadow: 0 0 10px rgba(106, 255, 106, 0.2);
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
 
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
 
-/* Links */
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
+p, li {
+  color: #e8e8e8;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* =========================================
+   Links
+========================================= */
 a {
-
   color: #6ac6ff;
-
+  text-decoration: none;
 }
-
-
 
 a:hover {
-
   color: #9be7ff;
-
+  text-decoration: underline;
 }
 
-
-
-/* Main content card */
-
-main.content {
-
-  background-color: rgba(26, 26, 26, 0.92);
-
-  padding: 2rem;
-
-  border-radius: 12px;
-
-  box-shadow: 0 0 20px rgba(106, 255, 106, 0.08);
-
-}
-
-
-
-/* Table of contents */
-
-#TOC, .toc-active {
-
+/* =========================================
+   TOC / sidebar
+========================================= */
+#TOC, .toc-active, .sidebar nav[role="doc-toc"] {
   color: #f5f5f5 !important;
-
 }
 
+.sidebar nav[role="doc-toc"] a {
+  color: #d6d6d6 !important;
+}
 
+.sidebar nav[role="doc-toc"] a:hover,
+.sidebar nav[role="doc-toc"] .active {
+  color: #6aff6a !important;
+}
 
-/* Code blocks */
-
-blockquote, pre, code {
-
+/* =========================================
+   Code blocks
+========================================= */
+blockquote,
+pre,
+code {
   background-color: #222222;
-
   color: #f5f5f5;
+}
 
+pre {
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* =========================================
+   Hero section
+   Add matching HTML in index.qmd
+========================================= */
+.hero-block {
+  margin-bottom: 3rem;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.05;
+  color: #ffffff !important;
+  margin-bottom: 0.8rem;
+}
+
+.hero-title span {
+  color: #6aff6a;
+  text-shadow: 0 0 14px rgba(106, 255, 106, 0.35);
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #d8d8d8;
+  max-width: 850px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: rgba(106, 255, 106, 0.12);
+  border: 1px solid rgba(106, 255, 106, 0.28);
+  color: #6aff6a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   Feature / summary cards
+========================================= */
+.project-card {
+  margin: 2rem 0 3rem 0;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 24px rgba(106, 255, 106, 0.06);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.scope-card {
+  padding: 1.2rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.scope-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(106, 255, 106, 0.28);
+}
+
+.scope-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.scope-card p {
+  margin-bottom: 0;
+  color: #d0d0d0;
+}
+
+/* =========================================
+   Images and embeds
+========================================= */
+img {
+  border-radius: 12px;
+}
+
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(106, 255, 106, 0.08);
+}
+
+/* =========================================
+   Mobile responsiveness
+========================================= */
+@media (max-width: 900px) {
+  .scope-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  main.content {
+    padding: 1.2rem;
+  }
 }

@@ -165,14 +165,14 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
+    "text": "Digital Musicology Project\n\n\nThe Sound of &lt;span&gt;Evolution&lt;/span&gt;\n\n\nA digital musicology project analyzing how video game soundtrack scale evolved from early hardware-limited compositions to modern cinematic and orchestral scores."
   },
   {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Home",
-    "section": "",
-    "text": "Video game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
+    "section": "Introduction",
+    "text": "Introduction\nVideo game music has evolved dramatically over time. Early games were shaped by hardware limitations and relied on short looping melodies. Modern games, by contrast, feature larger soundtracks with longer and more varied compositions.\nThis project investigates how the structure and scale of video game soundtracks changed across technological eras."
   },
   {
     "objectID": "index.html#research-question",
@@ -182,17 +182,24 @@
     "text": "Research Question\nHow has the scale of video game soundtracks changed across technological eras?"
   },
   {
-    "objectID": "index.html#what-this-site-shows",
-    "href": "index.html#what-this-site-shows",
+    "objectID": "index.html#project-scope",
+    "href": "index.html#project-scope",
     "title": "Home",
-    "section": "What this site shows",
-    "text": "What this site shows\n\nhow many tracks different games contain\nhow soundtrack runtime changes over time\nhow track-length distributions vary across eras\nwhat these patterns suggest about technological change"
+    "section": "Project Scope",
+    "text": "Project Scope\n\n\n&lt;h4&gt;Track Density&lt;/h4&gt;\n&lt;p&gt;How many tracks different games contain across technological eras.&lt;/p&gt;\n\n\n&lt;h4&gt;Runtime Shift&lt;/h4&gt;\n&lt;p&gt;How total soundtrack runtime changes over time.&lt;/p&gt;\n\n\n&lt;h4&gt;Track Length Distribution&lt;/h4&gt;\n&lt;p&gt;How the lengths of individual soundtrack tracks vary across the dataset.&lt;/p&gt;\n\n\n&lt;h4&gt;Technological Change&lt;/h4&gt;\n&lt;p&gt;What these musical patterns suggest about changing hardware and storage limits.&lt;/p&gt;"
   },
   {
     "objectID": "index.html#history-of-video-game-music",
     "href": "index.html#history-of-video-game-music",
     "title": "Home",
     "section": "History of Video Game Music",
-    "text": "History of Video Game Music"
+    "text": "History of Video Game Music\nThe timeline below highlights key moments in the evolution of video game music, from early arcade sound effects and chip-based melodies to modern cinematic and ambient scoring. It provides historical context for the quantitative analysis presented elsewhere on the site.\n\n\nThe historical progression shown in the timeline helps frame the project’s central argument: as hardware limitations decreased and storage capacity expanded, video game soundtracks also grew in size, diversity, and compositional complexity."
+  },
+  {
+    "objectID": "index.html#why-this-matters",
+    "href": "index.html#why-this-matters",
+    "title": "Home",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nVideo game music has grown from a technical necessity into a major component of interactive storytelling. By comparing soundtrack structure across eras, this project shows how technological constraints and innovations shaped the development of one of the most recognizable forms of digital culture."
   }
 ]
