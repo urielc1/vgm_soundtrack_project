@@ -1,99 +1,152 @@
-/* Animated dark gaming background */
+:root {
+  --bg-dark: #05070a;
+  --accent-emerald: #10b981;
+  --accent-blue: #3b82f6;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
 body {
-  position: relative;
-  background: linear-gradient(
-    -45deg,
-    #050505,
-    #0a0a0a,
-    #0f1f0f,
-    #0a0a0a
-  );
-  background-size: 400% 400%;
-  animation: gradientMove 18s ease infinite;
-  color: #f5f5f5;
-  overflow-x: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-image: 
+    radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
 }
 
-/* Subtle animated retro grid overlay */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
-  background-image:
-    linear-gradient(rgba(106, 255, 106, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(106, 255, 106, 0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: gridMove 30s linear infinite;
-  opacity: 0.35;
-}
-
-/* Background animation */
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Grid animation */
-@keyframes gridMove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(40px, 40px);
-  }
-}
-
-/* Navbar styling */
+/* --- NAVIGATION --- */
 .navbar {
-  background-color: #0b0b0b !important;
-  border-bottom: 2px solid #6aff6a;
+  background: rgba(5, 7, 10, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border) !important;
+  padding: 1rem 2rem;
 }
 
-.navbar a,
-.navbar-brand {
-  color: #f5f5f5 !important;
+.navbar-title, .nav-link {
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
 }
 
-/* Headers */
-h1, h2, h3 {
-  color: #6aff6a;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(106, 255, 106, 0.25);
+.nav-link:hover {
+  color: var(--accent-emerald) !important;
 }
 
-/* Links */
-a {
-  color: #6ac6ff;
+/* --- LAYOUT & CONTENT --- */
+#quarto-content {
+  padding-top: 4rem;
 }
 
-a:hover {
-  color: #9be7ff;
-}
-
-/* Main content card */
 main.content {
-  background-color: rgba(26, 26, 26, 0.92);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(106, 255, 106, 0.08);
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* Table of contents */
-#TOC, .toc-active {
-  color: #f5f5f5 !important;
+/* --- CUSTOM HERO COMPONENT --- */
+.hero-header {
+  margin-bottom: 4rem;
+  animation: fadeIn 1s ease-out;
 }
 
-/* Code blocks */
-blockquote, pre, code {
-  background-color: #222222;
-  color: #f5f5f5;
+.hero-header h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  background: linear-gradient(to right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 700px;
+}
+
+/* --- CARDS & BLOCKS --- */
+.analysis-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.analysis-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.research-callout {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  margin: 4rem 0;
+}
+
+.research-callout h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* --- SCOPE GRID --- */
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.scope-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.scope-item b {
+  color: var(--accent-emerald);
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+/* --- TIMELINE CONTAINER --- */
+.timeline-container {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Quarto TOC Styling */
+#TOC {
+  border-left: 1px solid var(--glass-border);
+  font-size: 0.85rem;
+}
+
+#TOC .active {
+  color: var(--accent-emerald) !important;
+  border-left: 2px solid var(--accent-emerald);
+  padding-left: 10px;
 }
