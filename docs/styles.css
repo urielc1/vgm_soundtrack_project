@@ -51,7 +51,7 @@ main.content {
   padding: 0;
 }
 
-/* hide default big page title if needed */
+/* hide default Quarto page title */
 .quarto-title-block {
   display: none;
 }
@@ -63,6 +63,7 @@ main.content {
   padding: 3rem 1.5rem 4rem 1.5rem;
 }
 
+/* status badge */
 .status-pill {
   display: inline-block;
   margin-bottom: 2rem;
@@ -77,6 +78,7 @@ main.content {
   text-transform: uppercase;
 }
 
+/* hero section */
 .hero-screen {
   min-height: 58vh;
   display: flex;
@@ -112,6 +114,10 @@ main.content {
   color: #b8c0d0;
   margin: 0;
 }
+
+/* =========================
+   Overview section
+========================= */
 
 .overview-panel {
   margin-bottom: 3rem;
@@ -167,7 +173,10 @@ main.content {
   font-size: 0.98rem;
 }
 
-/* timeline */
+/* =========================
+   Timeline
+========================= */
+
 .timeline-section {
   margin-top: 3rem;
 }
@@ -191,7 +200,10 @@ main.content {
   background: #111;
 }
 
-/* toc */
+/* =========================
+   TOC
+========================= */
+
 #TOC,
 .sidebar nav[role="doc-toc"] {
   color: #d7dce6 !important;
@@ -207,14 +219,21 @@ main.content {
   color: #7af7b7 !important;
 }
 
-/* code */
+/* =========================
+   Code blocks
+========================= */
+
 pre, code, blockquote {
   background-color: #1f2329;
   color: #f5f5f5;
 }
 
-/* mobile */
+/* =========================
+   Mobile
+========================= */
+
 @media (max-width: 900px) {
+
   .overview-grid {
     grid-template-columns: 1fr;
   }
@@ -226,4 +245,5 @@ pre, code, blockquote {
   .hero-screen {
     min-height: auto;
   }
+
 }
